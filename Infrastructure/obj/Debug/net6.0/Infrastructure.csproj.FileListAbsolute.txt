@@ -1,0 +1,15 @@
+D:\.Net\web-apps\web-apis\HotelManagementSystem\Infrastructure\bin\Debug\net6.0\Infrastructure.deps.json
+D:\.Net\web-apps\web-apis\HotelManagementSystem\Infrastructure\bin\Debug\net6.0\Infrastructure.dll
+D:\.Net\web-apps\web-apis\HotelManagementSystem\Infrastructure\bin\Debug\net6.0\Infrastructure.pdb
+D:\.Net\web-apps\web-apis\HotelManagementSystem\Infrastructure\bin\Debug\net6.0\Domain.dll
+D:\.Net\web-apps\web-apis\HotelManagementSystem\Infrastructure\bin\Debug\net6.0\Domain.pdb
+D:\.Net\web-apps\web-apis\HotelManagementSystem\Infrastructure\obj\Debug\net6.0\Infrastructure.csproj.AssemblyReference.cache
+D:\.Net\web-apps\web-apis\HotelManagementSystem\Infrastructure\obj\Debug\net6.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\.Net\web-apps\web-apis\HotelManagementSystem\Infrastructure\obj\Debug\net6.0\Infrastructure.AssemblyInfoInputs.cache
+D:\.Net\web-apps\web-apis\HotelManagementSystem\Infrastructure\obj\Debug\net6.0\Infrastructure.AssemblyInfo.cs
+D:\.Net\web-apps\web-apis\HotelManagementSystem\Infrastructure\obj\Debug\net6.0\Infrastructure.csproj.CoreCompileInputs.cache
+D:\.Net\web-apps\web-apis\HotelManagementSystem\Infrastructure\obj\Debug\net6.0\Infrastructure.csproj.CopyComplete
+D:\.Net\web-apps\web-apis\HotelManagementSystem\Infrastructure\obj\Debug\net6.0\Infrastructure.dll
+D:\.Net\web-apps\web-apis\HotelManagementSystem\Infrastructure\obj\Debug\net6.0\refint\Infrastructure.dll
+D:\.Net\web-apps\web-apis\HotelManagementSystem\Infrastructure\obj\Debug\net6.0\Infrastructure.pdb
+D:\.Net\web-apps\web-apis\HotelManagementSystem\Infrastructure\obj\Debug\net6.0\ref\Infrastructure.dll
