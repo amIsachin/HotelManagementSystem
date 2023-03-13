@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "H0rDH7iCfnfoik2i61P4OEqdzt7BdSX1WBZgzi1GGGU=",
+  "Source": "HotelManagementSystem.Web",
+  "BasePath": "_content/HotelManagementSystem.Web",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

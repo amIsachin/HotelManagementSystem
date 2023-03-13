@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csp
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{B9C01DED-2F30-4676-8BB3-163E09E08AAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{7E418CFF-7B99-469E-B060-603A8FDDD5CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{7E418CFF-7B99-469E-B060-603A8FDDD5CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelManagementSystem.Web", "HotelManagementSystem.Web\HotelManagementSystem.Web.csproj", "{C06FD3D9-E9CD-4AFF-B5EF-A5649ACADFB3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +27,10 @@ Global
 		{7E418CFF-7B99-469E-B060-603A8FDDD5CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E418CFF-7B99-469E-B060-603A8FDDD5CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E418CFF-7B99-469E-B060-603A8FDDD5CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C06FD3D9-E9CD-4AFF-B5EF-A5649ACADFB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C06FD3D9-E9CD-4AFF-B5EF-A5649ACADFB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C06FD3D9-E9CD-4AFF-B5EF-A5649ACADFB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C06FD3D9-E9CD-4AFF-B5EF-A5649ACADFB3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
