@@ -67,3 +67,5 @@ D:\.Net\web-apps\web-apis\HotelManagementSystem\HotelManagementSystem.Web\obj\De
 D:\.Net\web-apps\web-apis\HotelManagementSystem\HotelManagementSystem.Web\obj\Debug\net6.0\HotelManagementSystem.Web.pdb
 D:\.Net\web-apps\web-apis\HotelManagementSystem\HotelManagementSystem.Web\obj\Debug\net6.0\HotelManagementSystem.Web.genruntimeconfig.cache
 D:\.Net\web-apps\web-apis\HotelManagementSystem\HotelManagementSystem.Web\obj\Debug\net6.0\ref\HotelManagementSystem.Web.dll
+D:\.Net\web-apps\web-apis\HotelManagementSystem\HotelManagementSystem.Web\bin\Debug\net6.0\Application.dll
+D:\.Net\web-apps\web-apis\HotelManagementSystem\HotelManagementSystem.Web\bin\Debug\net6.0\Application.pdb
