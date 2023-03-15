@@ -10,3 +10,8 @@ D:\.Net\web-apps\web-apis\HotelManagementSystem\Application\obj\Debug\net6.0\App
 D:\.Net\web-apps\web-apis\HotelManagementSystem\Application\obj\Debug\net6.0\refint\Application.dll
 D:\.Net\web-apps\web-apis\HotelManagementSystem\Application\obj\Debug\net6.0\Application.pdb
 D:\.Net\web-apps\web-apis\HotelManagementSystem\Application\obj\Debug\net6.0\ref\Application.dll
+D:\.Net\web-apps\web-apis\HotelManagementSystem\Application\bin\Debug\net6.0\Domain.dll
+D:\.Net\web-apps\web-apis\HotelManagementSystem\Application\bin\Debug\net6.0\Infrastructure.dll
+D:\.Net\web-apps\web-apis\HotelManagementSystem\Application\bin\Debug\net6.0\Domain.pdb
+D:\.Net\web-apps\web-apis\HotelManagementSystem\Application\bin\Debug\net6.0\Infrastructure.pdb
+D:\.Net\web-apps\web-apis\HotelManagementSystem\Application\obj\Debug\net6.0\Application.csproj.CopyComplete

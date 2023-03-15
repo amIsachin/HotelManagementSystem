@@ -27,7 +27,14 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\.Net\\web-apps\\web-apis\\HotelManagementSystem\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\.Net\\web-apps\\web-apis\\HotelManagementSystem\\Domain\\Domain.csproj"
+              },
+              "D:\\.Net\\web-apps\\web-apis\\HotelManagementSystem\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "D:\\.Net\\web-apps\\web-apis\\HotelManagementSystem\\Infrastructure\\Infrastructure.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
