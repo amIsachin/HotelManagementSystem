@@ -148,8 +148,8 @@
               "D:\\.Net\\web-apps\\web-apis\\HotelManagementSystem\\Application\\Application.csproj": {
                 "projectPath": "D:\\.Net\\web-apps\\web-apis\\HotelManagementSystem\\Application\\Application.csproj"
               },
-              "D:\\.Net\\web-apps\\web-apis\\HotelManagementSystem\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "D:\\.Net\\web-apps\\web-apis\\HotelManagementSystem\\Infrastructure\\Infrastructure.csproj"
+              "D:\\.Net\\web-apps\\web-apis\\HotelManagementSystem\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\.Net\\web-apps\\web-apis\\HotelManagementSystem\\Domain\\Domain.csproj"
               }
             }
           }

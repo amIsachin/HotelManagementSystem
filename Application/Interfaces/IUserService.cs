@@ -5,5 +5,6 @@ namespace Application.Interfaces
     public interface IUserService
     {
         Task<List<UserEntity>> GetAllUsersAsync();
+        Task<bool> NewUserAsync(UserEntity userEntity);
     }
 }

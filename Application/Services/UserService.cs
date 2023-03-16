@@ -17,5 +17,19 @@ namespace Application.Services
         {
             return await _context.Users.ToListAsync();
         }
+
+        public async Task<bool> NewUserAsync(UserEntity userEntity)
+        {
+            await _context.Users.AddAsync(userEntity);
+
+            bool isInserted = await _context.SaveChangesAsync() > 0;
+
+            if (isInserted is true)
+            {
+                return true;
+            }
+
+            return false;
+        }
     }
 }
