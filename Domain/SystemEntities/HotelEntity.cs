@@ -3,6 +3,9 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Domain.SystemEntities;
 
+/// <summary>
+/// Hotel entity class contains system information related to database. 
+/// </summary>
 public class HotelEntity : AuditableBaseEntity
 {
     [Key]

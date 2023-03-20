@@ -16,6 +16,10 @@ namespace HotelManagementSystem.Web.Controllers
         }
         #endregion
 
+        /// <summary>
+        /// This method returns all user which available in the database.
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public async Task<IActionResult> GetAllUsers()
         {
@@ -29,6 +33,11 @@ namespace HotelManagementSystem.Web.Controllers
             return Ok(allUsers);
         }
 
+        /// <summary>
+        /// This method create new user.
+        /// </summary>
+        /// <param name="userEntity"></param>
+        /// <returns></returns>
         [HttpPost]
         public async Task<IActionResult> NewUser(UserEntity userEntity)
         {

@@ -1,15 +1,14 @@
 ﻿using Domain.SystemEntities;
 using Microsoft.EntityFrameworkCore;
 
-namespace Infrastructure.Persistence
-{
-    public class ApplicationDbContext : DbContext
-    {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
-        {
-        }
+namespace Infrastructure.Persistence;
 
-        public DbSet<UserEntity> Users { get; set; }
-        public DbSet<HotelEntity> Hotels { get; set; }
+public class ApplicationDbContext : DbContext
+{
+    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
+    {
     }
+
+    public DbSet<UserEntity> Users { get; set; }
+    public DbSet<HotelEntity> Hotels { get; set; }
 }
