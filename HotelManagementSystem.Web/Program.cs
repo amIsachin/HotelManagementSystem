@@ -13,6 +13,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IHotelSerivce, HotelService>();
 
 // Connection string.
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
@@ -29,6 +30,9 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+// CORS.
+app.UseCors(policy => policy.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
 
 app.UseAuthorization();
 
