@@ -15,6 +15,10 @@ namespace HotelManagementSystem.Web.Controllers
         }
         #endregion
 
+        /// <summary>
+        /// Get all hotels.
+        /// </summary>
+        /// <returns></returns>
         public async Task<IActionResult> GetAllHotels()
         {
             var allHotels = await this._hotelService.GetHotelListAsync();
