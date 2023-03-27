@@ -1,4 +1,5 @@
 ﻿using Application.Interfaces;
+using Domain.SystemEntities;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HotelManagementSystem.Web.Controllers
@@ -19,6 +20,7 @@ namespace HotelManagementSystem.Web.Controllers
         /// Get all hotels.
         /// </summary>
         /// <returns></returns>
+        [HttpGet("")]
         public async Task<IActionResult> GetAllHotels()
         {
             var allHotels = await this._hotelService.GetHotelListAsync();
@@ -29,6 +31,25 @@ namespace HotelManagementSystem.Web.Controllers
             }
 
             return Ok(allHotels);
+        }
+
+        /// <summary>
+        /// Add new hotel functionality.
+        /// </summary>
+        /// <param name="hotelEntity"></param>
+        /// <returns></returns>
+        [HttpPost]
+        public async Task<IActionResult> AddNewHotel([FromBody] HotelEntity hotelEntity)
+        {
+            bool isAdded = await _hotelService.AddNewHotelAsync(hotelEntity);
+
+            if (isAdded is true)
+            {
+                return Ok(true);
+            }
+
+            return BadRequest();
+
         }
     }
 }

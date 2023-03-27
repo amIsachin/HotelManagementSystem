@@ -5,4 +5,5 @@ namespace Application.Interfaces;
 public interface IHotelSerivce
 {
     Task<List<HotelEntity>> GetHotelListAsync();
+    Task<bool> AddNewHotelAsync(HotelEntity hotelEntity);
 }

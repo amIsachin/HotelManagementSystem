@@ -13,7 +13,7 @@ namespace Application.Services
         public HotelService(ApplicationDbContext context)
         {
             _context = context;
-        } 
+        }
         #endregion
 
         /// <summary>
@@ -22,7 +22,26 @@ namespace Application.Services
         /// <returns></returns>
         public async Task<List<HotelEntity>> GetHotelListAsync()
         {
-           return await this._context.Hotels.ToListAsync();
+            return await this._context.Hotels.ToListAsync();
+        }
+
+        /// <summary>
+        /// This method perfome add new hotel in database. if added successfully then return true otherwise false
+        /// </summary>
+        /// <param name="hotelEntity"></param>
+        /// <returns></returns>
+        public async Task<bool> AddNewHotelAsync(HotelEntity hotelEntity)
+        {
+            await _context.AddAsync(hotelEntity);
+
+            int isAdded = await _context.SaveChangesAsync();
+
+            if (isAdded > 0)
+            {
+                return true;
+            }
+
+            return false;
         }
     }
 }
