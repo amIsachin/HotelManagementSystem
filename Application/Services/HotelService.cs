@@ -1,4 +1,5 @@
 ﻿using Application.Interfaces;
+using Application.Methods;
 using Domain.SystemEntities;
 using Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
@@ -32,6 +33,8 @@ namespace Application.Services
         /// <returns></returns>
         public async Task<bool> AddNewHotelAsync(HotelEntity hotelEntity)
         {
+            hotelEntity.Created = TimeManagement.Instance.DateTimeNow();
+
             await _context.AddAsync(hotelEntity);
 
             int isAdded = await _context.SaveChangesAsync();
