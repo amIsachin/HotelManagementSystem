@@ -46,5 +46,26 @@ namespace Application.Services
 
             return false;
         }
+
+        /// <summary>
+        /// Delete hotel service.
+        /// </summary>
+        /// <param name="hotelId"></param>
+        /// <returns></returns>
+        public async Task<bool> DeleteHotelAsync(int hotelId)
+        {
+            var hotel = new HotelEntity() { HotelId = hotelId };
+
+            _context.Hotels.Remove(hotel);
+
+            int isDeleted = await _context.SaveChangesAsync();
+
+            if (isDeleted > 0)
+            {
+                return true;
+            }
+
+            return false;
+        }
     }
 }

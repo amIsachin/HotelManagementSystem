@@ -51,5 +51,24 @@ namespace HotelManagementSystem.Web.Controllers
             return BadRequest();
 
         }
+
+        /// <summary>
+        /// Delete hotel functionalityss
+        /// </summary>
+        /// <param name="hotelId"></param>
+        /// <returns></returns>
+        [HttpDelete("{hotelId}")]
+        public async Task<IActionResult> DeleteHotel([FromRoute] int hotelId)
+        {
+            bool isDeleted = await _hotelService.DeleteHotelAsync(hotelId);
+
+            if (isDeleted is true)
+            {
+                return Ok( true);
+            }
+
+            return new StatusCodeResult(StatusCodes.Status500InternalServerError);
+
+        }
     }
 }
