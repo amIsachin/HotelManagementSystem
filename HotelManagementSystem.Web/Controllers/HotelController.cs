@@ -64,11 +64,31 @@ namespace HotelManagementSystem.Web.Controllers
 
             if (isDeleted is true)
             {
-                return Ok( true);
+                return Ok(true);
             }
 
             return new StatusCodeResult(StatusCodes.Status500InternalServerError);
 
+        }
+
+
+        /// <summary>
+        /// Update hotel functionality.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="hotelEntity"></param>
+        /// <returns></returns>
+        [HttpPut("{hotelId}")]
+        public async Task<IActionResult> UpdateHotel([FromRoute] int hotelId, [FromBody] HotelEntity hotelEntity)
+        {
+            bool isUpdated = await _hotelService.UpdateHotelAsync(hotelId, hotelEntity);
+
+            if (isUpdated is true)
+            {
+                return Ok(true);
+            }
+
+            return BadRequest();
         }
     }
 }

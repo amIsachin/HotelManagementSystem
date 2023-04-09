@@ -67,5 +67,33 @@ namespace Application.Services
 
             return false;
         }
+
+
+        /// <summary>
+        /// Update hotel service.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="hotelEntity"></param>
+        /// <returns></returns>
+        public async Task<bool> UpdateHotelAsync(int hotelId, HotelEntity hotelEntity)
+        {
+            var hotel = await _context.Hotels.FindAsync(hotelId);
+
+            if (hotel != null)
+            {
+                hotel.Name = hotelEntity.Name;
+                hotel.RentParDay = hotelEntity.RentParDay;
+                hotel.MaximumCapacity = hotelEntity.MaximumCapacity;
+
+                int isUpdated = await _context.SaveChangesAsync();
+
+                if (isUpdated > 0)
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
     }
 }
