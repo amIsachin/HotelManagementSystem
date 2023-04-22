@@ -8,7 +8,7 @@ namespace HotelManagementSystem.Web.Controllers
     [ApiController]
     public class HotelController : ControllerBase
     {
-        #region DependencyInjection
+        #region DependencyInjectionForHotel
         private readonly IHotelSerivce _hotelService;
         public HotelController(IHotelSerivce hotelService)
         {
@@ -75,7 +75,7 @@ namespace HotelManagementSystem.Web.Controllers
         /// <summary>
         /// Update hotel functionality.
         /// </summary>
-        /// <param name="id"></param>
+        /// <param name="hotelId"></param>
         /// <param name="hotelEntity"></param>
         /// <returns></returns>
         [HttpPut("{hotelId}")]
