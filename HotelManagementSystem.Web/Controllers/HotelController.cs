@@ -90,5 +90,24 @@ namespace HotelManagementSystem.Web.Controllers
 
             return BadRequest();
         }
+
+
+        /// <summary>
+        /// Get hotel by hotel id functionality.
+        /// </summary>
+        /// <param name="hotelId"></param>
+        /// <returns></returns>
+        [HttpGet("{hotelId}")]
+        public async Task<IActionResult> GetHotelByHotelId([FromRoute] int hotelId)
+        {
+            var hotelRecord = await _hotelService.GetHotelByHotelId(hotelId);
+
+            if (hotelRecord == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(hotelRecord);
+        }
     }
 }

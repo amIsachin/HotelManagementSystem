@@ -10,9 +10,11 @@ namespace HotelManagementSystem.Web.Controllers
     {
         #region DependencyInjection
         private readonly IUserService _userService;
-        public UserController(IUserService userService)
+        private readonly IHotelSerivce _hotelService;
+        public UserController(IUserService userService, IHotelSerivce hotelService)
         {
             _userService = userService;
+            _hotelService = hotelService;
         }
         #endregion
 
@@ -39,8 +41,17 @@ namespace HotelManagementSystem.Web.Controllers
         /// <param name="userEntity"></param>
         /// <returns></returns>
         [HttpPost]
-        public async Task<IActionResult> NewUser(UserEntity userEntity)
+        public async Task<IActionResult> NewUser([FromBody] UserEntity userEntity)
         {
+            var hotelRecord = await _hotelService.GetHotelByHotelId(userEntity.HotelEntity.HotelId);
+
+            if (hotelRecord == null)
+            {
+                return new StatusCodeResult(StatusCodes.Status500InternalServerError);
+            }
+
+            userEntity.HotelEntity = hotelRecord;
+
             bool isInserted = await _userService.NewUserAsync(userEntity);
 
             if (isInserted is true)
