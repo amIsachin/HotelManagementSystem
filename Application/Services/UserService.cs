@@ -16,7 +16,7 @@ namespace Application.Services
         public UserService(ApplicationDbContext context)
         {
             _context = context;
-        } 
+        }
         #endregion
 
         /// <summary>
@@ -35,16 +35,24 @@ namespace Application.Services
         /// <returns></returns>
         public async Task<bool> NewUserAsync(UserEntity userEntity)
         {
-            await _context.Users.AddAsync(userEntity);
-
-            bool isInserted = await _context.SaveChangesAsync() > 0;
-
-            if (isInserted is true)
+            try
             {
-                return true;
-            }
+                await _context.Users.AddAsync(userEntity);
 
-            return false;
+                bool isInserted = await _context.SaveChangesAsync() > 0;
+
+                if (isInserted is true)
+                {
+                    return true;
+                }
+
+                return false;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
     }
 }

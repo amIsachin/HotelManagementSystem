@@ -51,7 +51,6 @@ D:\.Net\web-apps\web-apis\HotelManagementSystem\HotelManagementSystem.Web\obj\De
 D:\.Net\web-apps\web-apis\HotelManagementSystem\HotelManagementSystem.Web\obj\Debug\net6.0\HotelManagementSystem.Web.AssemblyInfoInputs.cache
 D:\.Net\web-apps\web-apis\HotelManagementSystem\HotelManagementSystem.Web\obj\Debug\net6.0\HotelManagementSystem.Web.AssemblyInfo.cs
 D:\.Net\web-apps\web-apis\HotelManagementSystem\HotelManagementSystem.Web\obj\Debug\net6.0\HotelManagementSystem.Web.csproj.CoreCompileInputs.cache
-D:\.Net\web-apps\web-apis\HotelManagementSystem\HotelManagementSystem.Web\obj\Debug\net6.0\HotelManagementSystem.Web.MvcApplicationPartsAssemblyInfo.cs
 D:\.Net\web-apps\web-apis\HotelManagementSystem\HotelManagementSystem.Web\obj\Debug\net6.0\HotelManagementSystem.Web.MvcApplicationPartsAssemblyInfo.cache
 D:\.Net\web-apps\web-apis\HotelManagementSystem\HotelManagementSystem.Web\obj\Debug\net6.0\staticwebassets\msbuild.HotelManagementSystem.Web.Microsoft.AspNetCore.StaticWebAssets.props
 D:\.Net\web-apps\web-apis\HotelManagementSystem\HotelManagementSystem.Web\obj\Debug\net6.0\staticwebassets\msbuild.build.HotelManagementSystem.Web.props
@@ -69,3 +68,4 @@ D:\.Net\web-apps\web-apis\HotelManagementSystem\HotelManagementSystem.Web\obj\De
 D:\.Net\web-apps\web-apis\HotelManagementSystem\HotelManagementSystem.Web\obj\Debug\net6.0\ref\HotelManagementSystem.Web.dll
 D:\.Net\web-apps\web-apis\HotelManagementSystem\HotelManagementSystem.Web\bin\Debug\net6.0\Application.dll
 D:\.Net\web-apps\web-apis\HotelManagementSystem\HotelManagementSystem.Web\bin\Debug\net6.0\Application.pdb
+D:\.Net\web-apps\web-apis\HotelManagementSystem\HotelManagementSystem.Web\obj\Debug\net6.0\HotelManagementSystem.Web.MvcApplicationPartsAssemblyInfo.cs

@@ -1,4 +1,5 @@
 ﻿using Application.Interfaces;
+using Domain.Common.ViewModels;
 using Domain.SystemEntities;
 using Microsoft.AspNetCore.Mvc;
 
@@ -41,16 +42,27 @@ namespace HotelManagementSystem.Web.Controllers
         /// <param name="userEntity"></param>
         /// <returns></returns>
         [HttpPost]
-        public async Task<IActionResult> NewUser([FromBody] UserEntity userEntity)
+        public async Task<IActionResult> NewUser([FromBody] UserViewModel userViewModel)
         {
-            var hotelRecord = await _hotelService.GetHotelByHotelId(userEntity.HotelEntity.HotelId);
+            var hotelRecord = await _hotelService.GetHotelByHotelId(userViewModel.HotelId);
 
             if (hotelRecord == null)
             {
                 return new StatusCodeResult(StatusCodes.Status500InternalServerError);
             }
 
-            userEntity.HotelEntity = hotelRecord;
+            UserEntity userEntity = new UserEntity()
+            {
+                UserId = userViewModel.UserId,
+                Name = userViewModel.Name,
+                Gender = userViewModel.Gender,
+                Age = userViewModel.Age,
+                PhoneNumber = userViewModel.PhoneNumber,
+                City = userViewModel.City,
+                FromDate = userViewModel.FromDate,
+                HotelEntity = hotelRecord,
+                Created = userViewModel.Created,
+            };
 
             bool isInserted = await _userService.NewUserAsync(userEntity);
 

@@ -1,4 +1,5 @@
-﻿using Domain.SystemEntities;
+﻿using Domain.Common.ViewModels;
+using Domain.SystemEntities;
 
 namespace Application.Interfaces
 {
