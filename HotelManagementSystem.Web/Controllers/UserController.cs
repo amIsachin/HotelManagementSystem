@@ -44,7 +44,7 @@ namespace HotelManagementSystem.Web.Controllers
         [HttpPost]
         public async Task<IActionResult> NewUser([FromBody] UserViewModel userViewModel)
         {
-            var hotelRecord = await _hotelService.GetHotelByHotelId(userViewModel.HotelId);
+            var hotelRecord = await _hotelService.GetHotelByHotelIdAsync(userViewModel.HotelId);
 
             if (hotelRecord == null)
             {
@@ -72,6 +72,25 @@ namespace HotelManagementSystem.Web.Controllers
             }
 
             return new StatusCodeResult(StatusCodes.Status500InternalServerError);
+        }
+
+        [HttpPut("{userId}")]
+        public async Task<IActionResult> UpdateUser([FromRoute] int userId, [FromBody] UserViewModel userViewModel)
+        {
+            if (await _userService.IsExistUser(userId))
+            {
+                var hotelRecord = await _hotelService.GetHotelByHotelIdAsync(userViewModel.HotelId);
+
+                if (hotelRecord != null)
+                {
+                    if (await _userService.UpdateUserAsync(userId, userViewModel, hotelRecord))
+                    {
+                        return Ok(true);
+                    }
+                }
+            }
+
+            return NotFound();
         }
     }
 }

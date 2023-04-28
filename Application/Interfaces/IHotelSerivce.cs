@@ -8,5 +8,5 @@ public interface IHotelSerivce
     Task<bool> AddNewHotelAsync(HotelEntity hotelEntity);
     Task<bool> DeleteHotelAsync(int hotelId);
     Task<bool> UpdateHotelAsync(int hotelId, HotelEntity hotelEntity);
-    Task<HotelEntity?> GetHotelByHotelId(int hotelId);
+    Task<HotelEntity?> GetHotelByHotelIdAsync(int hotelId);
 }

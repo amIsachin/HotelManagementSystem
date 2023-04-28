@@ -100,7 +100,7 @@ namespace HotelManagementSystem.Web.Controllers
         [HttpGet("{hotelId}")]
         public async Task<IActionResult> GetHotelByHotelId([FromRoute] int hotelId)
         {
-            var hotelRecord = await _hotelService.GetHotelByHotelId(hotelId);
+            var hotelRecord = await _hotelService.GetHotelByHotelIdAsync(hotelId);
 
             if (hotelRecord == null)
             {

@@ -101,7 +101,7 @@ namespace Application.Services
         /// </summary>
         /// <param name="hotelId"></param>
         /// <returns></returns>
-        public async Task<HotelEntity?> GetHotelByHotelId(int hotelId)
+        public async Task<HotelEntity?> GetHotelByHotelIdAsync(int hotelId)
         {
             return await _context.Hotels.Where(hotel => hotel.HotelId == hotelId).FirstOrDefaultAsync();
         }
