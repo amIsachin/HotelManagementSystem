@@ -74,6 +74,12 @@ namespace HotelManagementSystem.Web.Controllers
             return new StatusCodeResult(StatusCodes.Status500InternalServerError);
         }
 
+        /// <summary>
+        /// Upate user funtionality.
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <param name="userViewModel"></param>
+        /// <returns></returns>
         [HttpPut("{userId}")]
         public async Task<IActionResult> UpdateUser([FromRoute] int userId, [FromBody] UserViewModel userViewModel)
         {
