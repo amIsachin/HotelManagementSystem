@@ -107,5 +107,22 @@ namespace Application.Services
             return false;
 
         }
+
+        /// <summary>
+        /// Get user by user id with hotel.
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <returns></returns>
+        public async Task<UserEntity?> GetUserByUserIdWithHotel(int userId)
+        {
+            var userRecord = await _context.Users.Where(x => x.UserId == userId).Include(nameof(HotelEntity)).FirstOrDefaultAsync();
+
+            if (userRecord != null)
+            {
+                return userRecord;
+            }
+
+            return null;
+        }
     }
 }

@@ -74,6 +74,25 @@ namespace HotelManagementSystem.Web.Controllers
             return new StatusCodeResult(StatusCodes.Status500InternalServerError);
         }
 
+
+        /// <summary>
+        /// Get user by id with hotel.
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <returns></returns>
+        [HttpGet("{userId}")]
+        public async Task<IActionResult> GetUserByUserIdWithHotel([FromRoute] int userId)
+        {
+            var userRecord = await _userService.GetUserByUserIdWithHotel(userId);
+
+            if (userRecord != null)
+            {
+                return Ok(userRecord);
+            }
+
+            return NotFound();
+        }
+
         /// <summary>
         /// Upate user funtionality.
         /// </summary>
